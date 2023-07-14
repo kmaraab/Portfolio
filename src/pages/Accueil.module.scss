@@ -1,0 +1,215 @@
+@import "../assets/styles/variables";
+
+.container{
+    background-color: $primary;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 130px 0px 10px 0px;
+    text-align: center;
+}
+
+.imgProfil{
+    width: 350px;
+    height: 350px;
+    margin: auto;
+    border-radius: 400px;
+    border: 12px white solid;
+    overflow: hidden;
+    animation: scaleEffect .7s ease-in-out both;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.infoDBase{
+    p{
+        margin: 0;
+        &:nth-child(1){
+            margin-top: 10px;
+            text-transform: uppercase;
+            font-size: 25px;
+            font-weight: 300;
+        }
+
+        &:nth-child(2){
+            text-transform: uppercase;
+            letter-spacing: 10px;
+            font-size: 45px;
+            font-weight: bold;
+        }
+
+        &:nth-child(3){
+            font-size: 18px;
+            margin: 5px 0px;
+        }
+    }
+}
+
+.buttonCTA{
+    width: 100%;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+
+    .portfolio{
+        cursor: pointer;
+        text-transform: capitalize;
+        font-size: 15px;
+        font-weight: 500;
+        background-color: $text-color;
+        color: white;
+        border: none;
+        border-radius: 0px;
+        padding: 15px 25px;
+    }
+
+    .skills{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        cursor: pointer;
+        text-transform: capitalize;
+        text-decoration: underline;
+        font-size: 17px;
+        background-color: transparent;
+        border: none;
+        border-radius: 0px;
+    }
+}
+
+
+.arrowAnnimation{
+    margin-top: 50px;
+    font-size: 25px;
+    animation: Faiden 1.5s infinite ease-in-out;
+}
+
+
+@keyframes Faiden {
+    0%{
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
+@media screen and (min-width: 1000px) {
+    .presentation{
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .imgProfil{
+        margin: 0;
+        width: 400px;
+        height: 400px;
+    }
+    
+    .infoDBase{
+        text-align: left;
+        p{
+            margin: 0;
+            &:nth-child(1){
+                margin-top: 0px;
+                text-transform: uppercase;
+                font-size: 40px;
+                font-weight: 300;
+            }
+    
+            &:nth-child(2){
+                text-transform: uppercase;
+                font-size: 70px;
+                font-weight: bold;
+            }
+    
+            &:nth-child(3){
+                font-size: 20px;
+                margin: 8px 0px 30px 0px;
+            }
+        }
+    }
+
+    .buttonCTA{
+        margin-top: 0px;
+        padding: 0px;
+        justify-content: flex-start;
+        gap: 40px;
+    }
+}
+
+
+
+// annimation typping text 
+@keyframes typing {
+    0%, 9% { content: ""; }
+    10%, 19% { content: "f"; }
+    20%, 29% { content: "fu"; }
+    30%, 39% { content: "ful"; }
+    40%, 49% { content: "full"; }
+    50%, 59% { content: "fulls"; }
+    60%, 69% { content: "fullst"; }
+    70%, 79% { content: "fullsta"; }
+    80%, 89% { content: "fullstac"; }
+    90%, 100% { content: "fullstack"; }
+}
+  
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+  
+.typewriter {
+    --caret: currentcolor;
+}
+  
+.typewriter::before {
+    content: "";
+    animation: typing 2s both;
+}
+  
+.typewriter::after {
+    content: "";
+    border-right: 10px solid var(--caret);
+    padding-right: 5px;
+    animation: blink 1s infinite;
+}
+  
+@media (prefers-reduced-motion) {
+    .typewriter::after {
+      animation: none;
+    }
+    
+    @keyframes sequencePopup {
+      0%, 100% { content: "developer"; }
+    }
+  
+    .typewriter::before {
+      content: "developer";
+      animation: sequencePopup 2s linear both;
+    }
+}
+  
+
+// animation sur l'image
+@keyframes scaleEffect {
+    0%{
+        transform: scale(0%);
+    }
+    100%{
+        transform: scale(100%);
+    }
+}

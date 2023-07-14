@@ -1,0 +1,47 @@
+@import "../../assets/styles/variables";
+
+.container{
+    width: 100%;
+    padding: 30px 25px 80px 15px;
+
+    h2{
+        font-size: 22px;
+        text-align: left;
+    }
+}
+
+a{
+    color: black !important;
+}
+
+.downloadCV{
+    width: fit-content;
+    text-align: center;
+    border: 2px solid black;
+    padding: 15px 25px;
+}
+
+.CVcontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+
+
+@media screen and (min-width: 720px) {
+    .container{
+        padding-left: 120px;
+        padding-right: 120px;
+    }   
+}
+
+@media screen and (min-width: 1000px) { 
+    .allSkills{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

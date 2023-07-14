@@ -1,0 +1,44 @@
+@import "../../../assets/styles/variables";
+
+.oneSkill{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+}
+
+.skill{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.graphSkill{
+    position: relative;
+    p{
+        margin: 0;
+        &:nth-child(1){
+            width: 100%;
+            height: 10px;
+            border-radius: 50px;
+            background-color: rgb(202, 202, 202);
+        }
+        &:nth-child(2){
+            margin-top: -10px;
+            // width: 30%;
+            height: 10px;
+            border-top-left-radius: 50px;
+            border-bottom-left-radius: 50px;
+            background-color: $primary;
+            position: absolute;
+        }
+    }
+}
+
+
+@media screen and (min-width: 1000px) { 
+    .skill{
+        position: relative;
+        width: 44% !important;
+    } 
+}

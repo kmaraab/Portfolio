@@ -1,0 +1,37 @@
+.Container{
+   display: flex;
+   justify-content: space-between; 
+   align-items: center;
+   padding: 8px 20px;
+   position: fixed;
+   width: 100%;
+   height: 65px;
+}
+
+.LinkMenu{
+    display: flex;
+    justify-content: space-between;
+    width: 230px;
+    color: black;
+    font-size: 17px;
+    a{
+        color: black !important;
+        font-weight: 600;
+    }
+}
+
+.MenuBurgerIcone{
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    p{
+        margin: 3px 0px;
+        border: 1px solid black;
+    }
+}
+
+.Logo{
+    font-size: 25px;
+}

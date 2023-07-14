@@ -1,0 +1,86 @@
+@import "../../assets/styles/variables";
+
+.container{
+    width: 100%;
+    padding: 70px 25px 25px 25px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2{
+        width: fit-content;
+        padding: 5px;
+        font-size: 15px;
+        background-color: $primary;
+    }
+}
+
+.title2{
+    text-transform: capitalize;
+    font-size: 40px;
+    margin: 10px 0px;
+    font-weight: 600;
+}
+
+.allParcours{
+    width: 100%;
+}
+
+.monParcours{
+    width: 100%;
+    margin-top: 50px;
+    border-left: 2px $primary 
+    solid;
+    padding-left: 20px;
+    h3{
+        font-size: 22px;
+        text-align: left;
+        margin-top: 25px;
+        margin-bottom: 20px;
+    }
+    div{
+        text-align: left;
+        margin-bottom: 30px;
+        border-bottom: 1px rgb(202, 202, 202) solid;
+        padding-bottom: 30px;
+        h3{
+            font-size: 18px;
+            font-weight: 500;
+            margin: 0;
+        }
+        p{
+            margin: 0;
+            font-size: 15px;
+            font-weight: 500;
+            color: gray;
+        }
+    }
+}
+
+
+@media screen and (min-width: 720px) and (max-width:999px) {
+    .allParcours{
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .allParcours{
+        display: flex;
+        gap: 100px;
+    }
+    
+    .monParcours{
+        h3{
+            margin-top: 0;
+        }
+        div{
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+        margin-bottom: 50px;
+    }
+}
