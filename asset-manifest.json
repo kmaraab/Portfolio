@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.52cc247c.css",
+    "main.js": "/Portfolio/static/js/main.2fa160d5.js",
+    "static/media/needforstars.mp4": "/Portfolio/static/media/needforstars.9d1ce45db71c77c8f69c.mp4",
+    "static/media/profil.jpg": "/Portfolio/static/media/profil.e4f895b4801854dd32e5.jpg",
+    "static/media/CV-CAMARA Aboubacar.pdf": "/Portfolio/static/media/CV-CAMARA Aboubacar.b6fc3800ae6873ed32da.pdf",
+    "static/media/project-5.jpg": "/Portfolio/static/media/project-5.089de1c63faf1d9f13d1.jpg",
+    "index.html": "/Portfolio/index.html",
+    "main.52cc247c.css.map": "/Portfolio/static/css/main.52cc247c.css.map",
+    "main.2fa160d5.js.map": "/Portfolio/static/js/main.2fa160d5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.52cc247c.css",
+    "static/js/main.2fa160d5.js"
+  ]
+}
