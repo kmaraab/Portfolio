@@ -14,7 +14,7 @@ export const router = createBrowserRouter([
         // element: <ErrorPage />,
       },
       {
-        path: '/',
+        path: '/Portfolio',
         caseSensitive: true,
         element: <Accueil />,
       },
